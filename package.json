@@ -1,0 +1,30 @@
+{
+  "name": "geo-homography",
+  "version": "1.0.0",
+  "description": "TypeScript-only library: GCP-based homography projection (image coords → GeoJSON).",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarwinsBuddy/geo-homography.git"
+  },
+  "keywords": [
+    "homography",
+    "geojson",
+    "gcp",
+    "ground-control-points",
+    "projection",
+    "geospatial",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "typescript": "^5.3.3"
+  }
+}
