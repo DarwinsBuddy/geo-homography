@@ -17,7 +17,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
 
       - name: Set version from release tag
         if: github.event_name == 'release'
@@ -32,6 +33,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Clear NODE_AUTH_TOKEN so npm uses OIDC only; setup-node can inject a default
+      # token when registry-url is set, which overrides trusted publishing.
+      # See https://github.com/orgs/community/discussions/176761 and actions/setup-node#1440
       - name: Publish to npm
         run: npm publish --access public
         env:
