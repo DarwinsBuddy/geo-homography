@@ -1,5 +1,7 @@
 # geo-homography
 
+[![CI](https://github.com/DarwinsBuddy/geo-homography/actions/workflows/ci.yml/badge.svg)](https://github.com/DarwinsBuddy/geo-homography/actions/workflows/ci.yml) [![npm version](https://img.shields.io/npm/v/geo-homography.svg)](https://www.npmjs.com/package/geo-homography) [![codecov](https://codecov.io/gh/DarwinsBuddy/geo-homography/graph/badge.svg?token=ACgThwoF6y)](https://codecov.io/gh/DarwinsBuddy/geo-homography)
+
 TypeScript-only library for GCP-based homography projection: image coordinates → GeoJSON (lon/lat).
 
 ## Install
