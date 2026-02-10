@@ -37,6 +37,8 @@ jobs:
       # token when registry-url is set, which overrides trusted publishing.
       # See https://github.com/orgs/community/discussions/176761 and actions/setup-node#1440
       - name: Publish to npm
-        run: npm publish --access public
+        run: |
+          npm config delete always-auth || true
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ""

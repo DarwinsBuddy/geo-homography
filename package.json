@@ -1,6 +1,6 @@
 {
   "name": "geo-homography",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript-only library: GCP-based homography projection (image coords → GeoJSON).",
   "type": "module",
   "main": "dist/index.js",
