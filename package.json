@@ -5,13 +5,23 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DarwinsBuddy/geo-homography.git"
+    "url": "git+https://github.com/DarwinsBuddy/geo-homography.git"
   },
-  "keywords": ["homography", "geojson", "gcp", "ground-control-points", "projection", "geospatial", "typescript"],
+  "keywords": [
+    "homography",
+    "geojson",
+    "gcp",
+    "ground-control-points",
+    "projection",
+    "geospatial",
+    "typescript"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
