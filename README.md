@@ -20,7 +20,7 @@ It's automatically available on [jsDelivr](https://www.jsdelivr.com/). Use it fr
 <script type="importmap">
 {
   "imports": {
-    "geo-homography": "https://cdn.jsdelivr.net/npm/geo-homography@1/dist/index.js"
+    "geo-homography": "https://cdn.jsdelivr.net/npm/geo-homography@1/dist/geo-homography.min.js"
   }
 }
 </script>
@@ -34,6 +34,15 @@ It's automatically available on [jsDelivr](https://www.jsdelivr.com/). Use it fr
 
 ```js
 import { projectToGeoJSON } from "https://cdn.jsdelivr.net/npm/geo-homography@1/dist/index.js";
+```
+
+**Minified (recommended for production):**  
+The package ships a minified ESM bundle. With the `jsdelivr`/`unpkg` fields, the default CDN entry is the minified file:
+
+```js
+import { projectToGeoJSON } from "https://cdn.jsdelivr.net/npm/geo-homography@1";
+// or explicitly:
+import { projectToGeoJSON } from "https://cdn.jsdelivr.net/npm/geo-homography@1/dist/geo-homography.min.js";
 ```
 
 - Replace `@1` with a specific version (e.g. `@1.0.0`) or use `@latest` (not recommended in production).

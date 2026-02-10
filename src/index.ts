@@ -1,9 +1,9 @@
 /**
- * projection-core: TypeScript-only library for GCP-based homography projection.
+ * geo-homography: TypeScript-only library for GCP-based homography projection.
  * No React, no DOM. Use in any TS/JS codebase.
  *
  * @example
- * import { projectToGeoJSON, type GCP, type PointToProject } from 'projection-core';
+ * import { projectToGeoJSON, type GCP, type PointToProject } from 'geo-homography';
  * const geojson = projectToGeoJSON(gcps, pointsToProject);
  */
 

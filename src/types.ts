@@ -1,6 +1,6 @@
 /**
  * Input/output types for GCP-based projection.
- * Used by projection-core and by consumers (e.g. demo UI).
+ * Used by geo-homography and by consumers (e.g. demo UI).
  */
 
 export interface GCP {

@@ -4,10 +4,13 @@
   "description": "TypeScript-only library: GCP-based homography projection (image coords → GeoJSON).",
   "type": "module",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "unpkg": "dist/geo-homography.min.js",
+  "jsdelivr": "dist/geo-homography.min.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -23,7 +26,7 @@
     "typescript"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && vite build && MINIFY=true vite build",
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage"
@@ -32,6 +35,7 @@
     "@types/geojson": "^7946.0.16",
     "@vitest/coverage-v8": "^2.1.6",
     "typescript": "^5.3.3",
+    "vite": "^6.4.1",
     "vitest": "^2.1.6"
   }
 }
